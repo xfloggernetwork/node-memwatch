@@ -5,10 +5,10 @@ all: build
 build: clean configure compile
 
 configure:
-	node-waf configure
+	node-gyp configure
 
 compile:
-	node-waf build
+	node-gyp build
 
 clean:
 	#rm -f bcrypt_lib.node
